@@ -4,7 +4,27 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World");
+            //RonVSKanyeAPI.KanyeQuote();
+            //RonVSKanyeAPI.RonQuote();
+            //RonVSKanyeAPI.KanyeQuote();
+            //RonVSKanyeAPI.RonQuote();
+            //RonVSKanyeAPI.KanyeQuote();
+            //RonVSKanyeAPI.RonQuote();
+            //RonVSKanyeAPI.KanyeQuote();
+            //RonVSKanyeAPI.RonQuote();
+            //RonVSKanyeAPI.KanyeQuote();
+            //RonVSKanyeAPI.RonQuote();
+
+            var client = new HttpClient();
+            var quote = new RonVSKanyeAPI(client);
+
+            for (int i = 0; i <= 5; i++)
+            {
+                RonVSKanyeAPI.KanyeQuote();
+                RonVSKanyeAPI.RonQuote();
+                Console.WriteLine("-------------------");
+                Console.WriteLine("-------------------");
+            }
         }
     }
 }
