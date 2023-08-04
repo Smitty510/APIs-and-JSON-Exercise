@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LU9m5Ajr6sym4e/87q96tt56iC4MEpsjm6iDZElFEYz3ECw/fssDK7IoF4H21USD+Z+ZV4tLJRHAecY7HERelA==",
+  "dgSpecHash": "dJV0Dpv2BFP780OThjjgshDGcPvRoHZSbKLvbEMuS3H+npliDtmje/tEwfCALSDbE5w29ILg/x1CjMkBMMbRKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\psmit\\OneDrive\\Desktop\\Repos\\APIs-and-JSON-Exercise\\APIsAndJSON\\APIsAndJSON.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\psmit\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\psmit\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\7.0.0\\microsoft.extensions.configuration.fileextensions.7.0.0.nupkg.sha512",
     "C:\\Users\\psmit\\.nuget\\packages\\microsoft.extensions.configuration.json\\7.0.0\\microsoft.extensions.configuration.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\psmit\\.nuget\\packages\\microsoft.extensions.configuration.usersecrets\\6.0.1\\microsoft.extensions.configuration.usersecrets.6.0.1.nupkg.sha512",
     "C:\\Users\\psmit\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\psmit\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
     "C:\\Users\\psmit\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",

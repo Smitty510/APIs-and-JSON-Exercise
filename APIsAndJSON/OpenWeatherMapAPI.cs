@@ -1,47 +1,33 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json.Linq;
 
 namespace OpenWeatherMap
 {
-    class WeatherMap
+    internal class WeatherMap
     {
-        static void Main(string[] args)
+        public static void Weather()
         {
-            var client = new HttpClient();
-            //var city = "Raleigh";
+            IConfiguration config = new ConfigurationBuilder()
+        .SetBasePath(Directory.GetCurrentDirectory())
+        .Build();
             var key = "09dc5001e466168c24e9f252d199152a";
 
-            while (true)
-            {
-                Console.WriteLine();
-                Console.Write("Please enter the city name: ");
-                var city_name = Console.ReadLine();
-                Console.WriteLine();
+            var client = new HttpClient();
 
-                var weatherURL = $"http://api.openweathermap.org/data/2.5/weather?q={city_name}&units=imperial&appid={key}";
-                var response = client.GetStringAsync(weatherURL).Result;
-                var formattedResponse = JObject.Parse(response).GetValue("main").ToString();
-                object temp = null;
-                Console.WriteLine($"The current Temperature is {temp} degrees Fahrenheit");
-                //AddSpaces(2);
-                Console.WriteLine("Would you like to exit?");
-                var userInput = Console.ReadLine();
-                //AddSpaces(2);
+            Console.Write("Please enter the city name: ");
+            var cityName = Console.ReadLine();
 
-                if (userInput.ToLower().Trim() == "yes")
-                {
-                    break;
-                }
-            }
+
+
+
+
+            var weatherURL = $"http://api.openweathermap.org/data/2.5/weather?q={cityName}&units=imperial&appid={key}";
+            string response = client.GetStringAsync(weatherURL).Result;
+            JObject weatherObject = JObject.Parse(response);
+            Console.WriteLine($"It is {weatherObject["main"]["temp"]} degrees Fahrenheit in {cityName}");
         }
-        //static void AddSpaces(int numberOfSpaces)
-        //{
-        //    while (numberOfSpaces != 0)
-        //    {
-        //        Console.WriteLine();
-        //        numberOfSpaces--;
-        //    }
-        //}
 
 
     }
 }
+
